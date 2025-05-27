@@ -1,12 +1,15 @@
 require('dotenv').config(); 
 const express = require("express");
 const mongoose = require("mongoose");
+const cors = require("cors")
+const routes = require('./routes');
 
 const routes = require('./routes');
 
 const app = express();
 // Habilita o parser de JSON em todas as rotas
 app.use(express.json())
+app.use(cors());
 
 app.get('/', (req, res) =>{
     return res.send('API AirCNC Rodando ...')
