@@ -1,12 +1,10 @@
 // routes/index.js
 const express = require('express');
-const sessaoRoutes  = require('./Sessao.routes');  //  <--- rota para endereço sessão
+const sessaoRoutes  = require('./Sessao.routes');
 
-const router = express.Router();   //  <------ monta meu roteamento nesta variavel ?
+const router = express.Router();
 
 // prefixo de URL   →   módulo de rotas
-router.use('/sessao',  sessaoRoutes); //  <----  router usa essa rota aqui e diz vai lá no Sessao.routes  (está apontando)
+router.use('/sessao',  sessaoRoutes);
 
 module.exports = router;
-
-
