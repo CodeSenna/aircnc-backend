@@ -6,7 +6,6 @@
 
 // routes/sessao.routes.js
 const express = require('express');
-const cors = require('cors');
 const SessaoController = require('../controllers/Sessao.Controller');
 const router = express.Router();
 
