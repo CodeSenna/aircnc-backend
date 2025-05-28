@@ -25,7 +25,6 @@ app.get('/ping', (req, res) => {
 // Por que o app.use(routes) aqui?
 // Deve vir após o express.json(), para que o body já seja convertido em objeto JavaScript.
 // Registra todas as sub-rotas definidas em routes.js.
-
 app.use(routes)
 
 async function startDatabase(){
